@@ -12,6 +12,10 @@
   border: silver 1px solid;
 }
 
+#calendarYear {
+  width: 60px;
+}
+
 .calendar {
   display: grid;
   grid-template-columns: 75px 75px 75px 75px 75px 75px 75px;
