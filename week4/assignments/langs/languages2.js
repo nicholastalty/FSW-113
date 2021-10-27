@@ -5,8 +5,12 @@ const lang = 'JavaScript'
 // the array as an argument.
 
 
-function chkLang(langs) {
+function chkLang(langs, ...values) {
     let result = false
+    console.log(langs, values);
+    for (let i = 0; i < values.length; i++) {
+        console.log(values[i])
+    };
 
     // use an array method to check whether the user included 'JavaScript' in their
     // list of languages
@@ -17,3 +21,4 @@ function chkLang(langs) {
     else
         obj.innerText = `Sorry,\nyou don't know ${lang}.`
 }
+
