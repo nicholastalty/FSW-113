@@ -10,6 +10,11 @@ function chkLang(langs, ...values) {
     console.log(langs, values);
     for (let i = 0; i < values.length; i++) {
         console.log(values[i])
+         let item = values[i]
+        // if (item){} = 'JavaScript'
+        if (item == "JavaScript"){
+            result = true;
+        }
     };
 
     // use an array method to check whether the user included 'JavaScript' in their
