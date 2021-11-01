@@ -11,7 +11,6 @@ function chkLang(langs, ...values) {
     for (let i = 0; i < values.length; i++) {
         console.log(values[i])
          let item = values[i]
-        // if (item){} = 'JavaScript'
         if (item == "JavaScript"){
             result = true;
         }
