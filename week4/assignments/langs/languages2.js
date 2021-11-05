@@ -14,7 +14,7 @@ document.getElementById('submit').addEventListener('click', function(){
 function checkLang(langs){
     let result = false
     for (let i = 0; i < langs.length; i++) {
-         let item = langs[i].value
+        let item = langs[i].value
         if (item == lang){
             result = true;
         }
