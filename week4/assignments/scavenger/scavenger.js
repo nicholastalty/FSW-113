@@ -8,7 +8,26 @@ document.getElementById('submit').addEventListener('click', combineLists)
 
 function combineLists() {
     var lstItems = document.querySelectorAll('textarea')
+    var scav = [...lstItems]
     console.log(lstItems)
+    console.log(scav)
+    var allItems = []
+
+    for (let i = 0; i < scav.length; i++) {
+        let item = scav[i].value
+        console.log(item, typeof item)
+        const ary = item.split(',')
+        console.log(ary)
+        allItems = [...allItems, ...ary]
+        // if (item = scav){
+        //use a spread operator to add everything. Use a spread operator to add allItems
+
+        // }
+    };
+    
+    allItems.sort()
+    console.log(allItems)
+
 }
 
 // The following code is a bonus addition that facilitates data entry on the scavenger.html document.
